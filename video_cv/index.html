@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Maquetador web</title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<link rel="stylesheet" href="css/screen.css">
+		<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+
+	</head>
+	<body>
+
+<div id="negro">
+
+
+<div class="stars"></div>
+<div class="twinkling"></div>
+<div class="clouds"></div>
+	<div id="zoom">
+		<h1>Maquetador web</h1>
+		<h2>Iván Albizu</h2>
+		<p>Java, Php, Oracle,</p>
+		<p>Css, Sass, Zurb, Bootsrap, Wordpress...</p>
+	</div>
+	<div id="perspectiva">
+		<div id="visible">
+		<div id="capa_movimiento">
+			<h1>Formación</h1>
+
+			<h2>FP Aplicaciones Multiplataforma</h2>
+			<p>Duración: 2000 horas.</p>
+			<p>Fecha de realización: Actual</p>
+
+			<h2>Programación web: JavaScript</h2>
+			<p>Duración: 150 horas.</p>
+			<p>Fecha de realización: 2013</p>
+
+			<h2>Diseño web avanzado con Html5 y Css3</h2>
+			<p>Duración: 210 horas</p>
+			<p>Fecha de realización: 2013</p>
+
+			<h2>SEO: Posicionamiento web en buscadores</h2>
+			<p>Duración: 50 horas</p>
+			<p>Fecha de realización: 2012</p>
+
+			<h2>Creativos Web 2.0</h2>
+			<p>Duración: 350 horas</p>
+			<p>Fecha de realización: 2012</p>
+
+			<h2>Accesibilidad y Usabilidad Web</h2>
+			<p>Duración: 100 horas</p>
+			<p>Fecha de realización: 2012</p>
+			 
+			<h2>Programador Aplicaciones Informáticas</h2> 
+			<p>Duración: 970 horas</p>
+			<p>Fecha de realización: 2011</p>
+
+			<!-- Habilidades -->
+			<h1>Habilidades</h1>
+			<h2>Programación Java y Php</h2>
+			<p>Nivel de conocimiento: 45%</p>
+			<h2>Base de datos Oracle</h2>
+			<p>Nivel de conocimiento: 35% (*)</p>
+			<h2>Html Css</h2>
+			<p>Nivel de conocimiento: 100%</p>
+			<h2>Sass</h2>
+			<p>Nivel de conocimiento: 85%</p>
+			<h2>JavaScript jQuery</h2>
+			<p>Nivel de conocimiento: 65%</p>
+			<h2>Wordpress</h2>
+			<p>Nivel de conocimiento: 90%</p>
+			<h2>Joomla! y Drupal</h2>
+			<p>Nivel de conocimiento: 30%</p>
+			<h2>Foundation Zurb</h2>
+			<p>Nivel de conocimiento: 25% (*)</p>
+			<h2>Twitter Bootstrap</h2>
+			<p>Nivel de conocimiento: 25% (*)</p>
+			<span class="anotacion">(*) Estudiando en profundidad dichas tecnologías.</span>
+			
+			<!-- Trabajos realizados -->
+			<h1>Principales trabajos realizados</h1>
+
+			<h2>Adhesur S.L.</h2>
+			<p>Tecnologías: Wordpress, JavaScript, Php...</p>
+
+			<h2>Gabinete de Psicología – Julia Hernández</h2>
+			<p>Tecnologías: Wordpress, Sass, Compass...</p>
+
+			<h2>Psicóloga María José Torres</h2>
+			<p>Tecnologías: Wordpress, Responsive, Sass, Compass...</p>
+
+			<h2>Flores frescas</h2>
+			<p>Tecnologías: Foundation Zurb, Sass, Compass...</p>
+
+			<h2>Centro Educo</h2>
+			<p>Tecnologías: Wordpress, Sass, Compass...</p>
+
+			<h2>AN 2012</h2>
+			<p>Tecnologías: Facebook, Sass, Compass...</p>
+
+		</div>
+		</div>
+	</div>
+
+	<!-- Pantalla final -->
+	<div id="pantalla_final">
+		<p class="titulo">Para más información</p>
+		<a href="mailto:ivan.albizu@gmail.com">ivan.albizu@gmail.com</a>
+		<a href="http://ivanalbizu.eu">http://ivanalbizu.eu</a>
+		<p class="titulo">Agradecimientos</p>
+		<p>Música: Miguel Marín (Árbol)</p>
+		<p>Efecto estrellas: http://www.script-tutorials.com/night-sky-with-twinkling-stars/</p>
+	</div>
+
+<audio autoplay="autoplay">
+	<source src="audio/arbol-dreams.ogg" type="audio/ogg">
+	<source src="audio/arbol-dreams.mp3" type="audio/mpeg">
+	Tu navegador no soporta audio.
+</audio>
+
+</div>
+<script type="text/javascript">
+    $(function() {
+      $("#refresh").click(function(evt) {
+         $("#negro").load("index.html")
+         evt.preventDefault();
+      })
+    })
+</script>
+
+</body>
+</html>

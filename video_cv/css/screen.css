@@ -1,0 +1,774 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 17, ../../../../../Ruby/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../Ruby/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../Ruby/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../Ruby/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../Ruby/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../Ruby/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../Ruby/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../Ruby/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../Ruby/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/*
+ * mixins
+ * 
+ */
+/* line 12, ../sass/screen.scss */
+body {
+  font-family: Consolas, sans-serif;
+}
+
+/* line 16, ../sass/screen.scss */
+h1 {
+  font-size: 35px;
+  text-transform: uppercase;
+  margin: 30px 0 20px 0;
+  text-decoration: underline;
+}
+
+/* line 17, ../sass/screen.scss */
+h2 {
+  font-size: 23px;
+  margin: 20px 0 10px 0;
+}
+
+/* line 18, ../sass/screen.scss */
+h3 {
+  font-size: 20px;
+}
+
+/* line 19, ../sass/screen.scss */
+span.anotacion {
+  font-size: 11px;
+  text-align: right;
+}
+
+/* line 20, ../sass/screen.scss */
+p {
+  font-size: 18px;
+}
+
+@keyframes entradilla {
+  /* line 9, ../sass/_mixins.scss */
+  0% {
+    opacity: 1;
+    transform: scaleX(10) scaleY(10);
+  }
+
+  /* line 12, ../sass/_mixins.scss */
+  50% {
+    transform: scaleX(1) scaleY(1);
+  }
+
+  /* line 14, ../sass/_mixins.scss */
+  70% {
+    opacity: 1;
+    transform: scaleX(1) scaleY(1);
+  }
+
+  /* line 18, ../sass/_mixins.scss */
+  100% {
+    opacity: 0;
+    transform: scaleX(0) scaleY(0);
+  }
+}
+
+@-webkit-keyframes entradilla {
+  /* line 24, ../sass/_mixins.scss */
+  0% {
+    opacity: 1;
+    -webkit-transform: scaleX(10) scaleY(10);
+  }
+
+  /* line 27, ../sass/_mixins.scss */
+  50% {
+    -webkit-transform: scaleX(1) scaleY(1);
+  }
+
+  /* line 29, ../sass/_mixins.scss */
+  70% {
+    opacity: 1;
+    -webkit-transform: scaleX(1) scaleY(1);
+  }
+
+  /* line 33, ../sass/_mixins.scss */
+  100% {
+    opacity: 0;
+    -webkit-transform: scaleX(0) scaleY(0);
+  }
+}
+
+@-moz-keyframes entradilla {
+  /* line 39, ../sass/_mixins.scss */
+  0% {
+    opacity: 1;
+    -moz-transform: scaleX(10) scaleY(10);
+  }
+
+  /* line 42, ../sass/_mixins.scss */
+  50% {
+    -moz-transform: scaleX(1) scaleY(1);
+  }
+
+  /* line 44, ../sass/_mixins.scss */
+  70% {
+    opacity: 1;
+    -moz-transform: scaleX(1) scaleY(1);
+  }
+
+  /* line 48, ../sass/_mixins.scss */
+  100% {
+    opacity: 0;
+    -moz-transform: scaleX(0) scaleY(0);
+  }
+}
+
+@-ms-keyframes entradilla {
+  /* line 54, ../sass/_mixins.scss */
+  0% {
+    opacity: 1;
+    -ms-transform: scaleX(10) scaleY(10);
+  }
+
+  /* line 57, ../sass/_mixins.scss */
+  50% {
+    -ms-transform: scaleX(1) scaleY(1);
+  }
+
+  /* line 59, ../sass/_mixins.scss */
+  70% {
+    opacity: 1;
+    -ms-transform: scaleX(1) scaleY(1);
+  }
+
+  /* line 63, ../sass/_mixins.scss */
+  100% {
+    opacity: 0;
+    -ms-transform: scaleX(0) scaleY(0);
+  }
+}
+
+@-o-keyframes entradilla {
+  /* line 69, ../sass/_mixins.scss */
+  0% {
+    opacity: 1;
+    -o-transform: scaleX(10) scaleY(10);
+  }
+
+  /* line 72, ../sass/_mixins.scss */
+  50% {
+    -o-transform: scaleX(1) scaleY(1);
+  }
+
+  /* line 74, ../sass/_mixins.scss */
+  70% {
+    opacity: 1;
+    -o-transform: scaleX(1) scaleY(1);
+  }
+
+  /* line 78, ../sass/_mixins.scss */
+  100% {
+    opacity: 0;
+    -o-transform: scaleX(0) scaleY(0);
+  }
+}
+
+@-khtml-keyframes entradilla {
+  /* line 84, ../sass/_mixins.scss */
+  0% {
+    opacity: 1;
+    -khtml-transform: scaleX(10) scaleY(10);
+  }
+
+  /* line 87, ../sass/_mixins.scss */
+  50% {
+    -khtml-transform: scaleX(1) scaleY(1);
+  }
+
+  /* line 89, ../sass/_mixins.scss */
+  70% {
+    opacity: 1;
+    -khtml-transform: scaleX(1) scaleY(1);
+  }
+
+  /* line 93, ../sass/_mixins.scss */
+  100% {
+    opacity: 0;
+    -khtml-transform: scaleX(0) scaleY(0);
+  }
+}
+
+@keyframes pantalla_final {
+  /* line 9, ../sass/_mixins.scss */
+  0% {
+    opacity: 0;
+    transform: scaleX(0) scaleY(0);
+  }
+
+  /* line 12, ../sass/_mixins.scss */
+  50% {
+    transform: scaleX(0.5) scaleY(0.5);
+  }
+
+  /* line 14, ../sass/_mixins.scss */
+  70% {
+    opacity: 0;
+    transform: scaleX(0.5) scaleY(0.5);
+  }
+
+  /* line 18, ../sass/_mixins.scss */
+  100% {
+    opacity: 1;
+    transform: scaleX(1.2) scaleY(1.2);
+  }
+}
+
+@-webkit-keyframes pantalla_final {
+  /* line 24, ../sass/_mixins.scss */
+  0% {
+    opacity: 0;
+    -webkit-transform: scaleX(0) scaleY(0);
+  }
+
+  /* line 27, ../sass/_mixins.scss */
+  50% {
+    -webkit-transform: scaleX(0.5) scaleY(0.5);
+  }
+
+  /* line 29, ../sass/_mixins.scss */
+  70% {
+    opacity: 0;
+    -webkit-transform: scaleX(0.5) scaleY(0.5);
+  }
+
+  /* line 33, ../sass/_mixins.scss */
+  100% {
+    opacity: 1;
+    -webkit-transform: scaleX(1.2) scaleY(1.2);
+  }
+}
+
+@-moz-keyframes pantalla_final {
+  /* line 39, ../sass/_mixins.scss */
+  0% {
+    opacity: 0;
+    -moz-transform: scaleX(0) scaleY(0);
+  }
+
+  /* line 42, ../sass/_mixins.scss */
+  50% {
+    -moz-transform: scaleX(0.5) scaleY(0.5);
+  }
+
+  /* line 44, ../sass/_mixins.scss */
+  70% {
+    opacity: 0;
+    -moz-transform: scaleX(0.5) scaleY(0.5);
+  }
+
+  /* line 48, ../sass/_mixins.scss */
+  100% {
+    opacity: 1;
+    -moz-transform: scaleX(1.2) scaleY(1.2);
+  }
+}
+
+@-ms-keyframes pantalla_final {
+  /* line 54, ../sass/_mixins.scss */
+  0% {
+    opacity: 0;
+    -ms-transform: scaleX(0) scaleY(0);
+  }
+
+  /* line 57, ../sass/_mixins.scss */
+  50% {
+    -ms-transform: scaleX(0.5) scaleY(0.5);
+  }
+
+  /* line 59, ../sass/_mixins.scss */
+  70% {
+    opacity: 0;
+    -ms-transform: scaleX(0.5) scaleY(0.5);
+  }
+
+  /* line 63, ../sass/_mixins.scss */
+  100% {
+    opacity: 1;
+    -ms-transform: scaleX(1.2) scaleY(1.2);
+  }
+}
+
+@-o-keyframes pantalla_final {
+  /* line 69, ../sass/_mixins.scss */
+  0% {
+    opacity: 0;
+    -o-transform: scaleX(0) scaleY(0);
+  }
+
+  /* line 72, ../sass/_mixins.scss */
+  50% {
+    -o-transform: scaleX(0.5) scaleY(0.5);
+  }
+
+  /* line 74, ../sass/_mixins.scss */
+  70% {
+    opacity: 0;
+    -o-transform: scaleX(0.5) scaleY(0.5);
+  }
+
+  /* line 78, ../sass/_mixins.scss */
+  100% {
+    opacity: 1;
+    -o-transform: scaleX(1.2) scaleY(1.2);
+  }
+}
+
+@-khtml-keyframes pantalla_final {
+  /* line 84, ../sass/_mixins.scss */
+  0% {
+    opacity: 0;
+    -khtml-transform: scaleX(0) scaleY(0);
+  }
+
+  /* line 87, ../sass/_mixins.scss */
+  50% {
+    -khtml-transform: scaleX(0.5) scaleY(0.5);
+  }
+
+  /* line 89, ../sass/_mixins.scss */
+  70% {
+    opacity: 0;
+    -khtml-transform: scaleX(0.5) scaleY(0.5);
+  }
+
+  /* line 93, ../sass/_mixins.scss */
+  100% {
+    opacity: 1;
+    -khtml-transform: scaleX(1.2) scaleY(1.2);
+  }
+}
+
+/* line 27, ../sass/screen.scss */
+div#zoom {
+  text-align: center;
+  position: absolute;
+  width: 650px;
+  top: 100px;
+  left: 50%;
+  margin-left: -325px;
+  z-index: 333;
+  font-size: 30px;
+  color: #fff;
+  opacity: 0;
+  animation: entradilla linear 11s;
+  animation-iteration-count: 1;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+  -webkit-animation: entradilla linear 11s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-delay: 1s;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation: entradilla linear 11s;
+  -moz-animation-iteration-count: 1;
+  -moz-animation-delay: 1s;
+  -moz-animation-fill-mode: forwards;
+  -o-animation: entradilla linear 11s;
+  -o-animation-iteration-count: 1;
+  -o-animation-delay: 1s;
+  -o-animation-fill-mode: forwards;
+  -ms-animation: entradilla linear 11s;
+  -ms-animation-iteration-count: 1;
+  -ms-animation-delay: 1s;
+  -ms-animation-fill-mode: forwards;
+  -khtml-animation: entradilla linear 11s;
+  -khtml-animation-iteration-count: 1;
+  -khtml-animation-delay: 1s;
+  -khtml-animation-fill-mode: forwards;
+}
+/* line 28, ../sass/screen.scss */
+div#zoom h1 {
+  text-decoration: none;
+  text-transform: lowercase;
+}
+/* line 29, ../sass/screen.scss */
+div#zoom h2 {
+  text-decoration: none;
+  text-transform: lowercase;
+}
+/* line 30, ../sass/screen.scss */
+div#zoom p {
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+/* line 50, ../sass/screen.scss */
+#negro {
+  position: absolute;
+  background-color: black;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+/* line 56, ../sass/screen.scss */
+#negro #perspectiva {
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  margin-left: -300px;
+  width: 600px;
+  color: #fff;
+  transform: perspective(400px) rotateX(45deg);
+  -webkit-transform: perspective(400px) rotateX(45deg);
+  -moz-transform: perspective(400px) rotateX(45deg);
+  -o-transform: perspective(400px) rotateX(45deg);
+  -ms-transform: perspective(400px) rotateX(45deg);
+  -khtml-transform: perspective(400px) rotateX(45deg);
+  visibility: hidden;
+  z-index: 4;
+}
+/* line 71, ../sass/screen.scss */
+#negro #visible {
+  position: absolute;
+  left: 50%;
+  top: 100px;
+  margin-left: -250px;
+  width: 500px;
+  height: 600px;
+  visibility: visible;
+}
+/* line 79, ../sass/screen.scss */
+#negro #visible #capa_movimiento {
+  position: absolute;
+  display: block;
+  width: 100%;
+  top: 400px;
+  animation: animacion 90s linear 0s;
+  -webkit-animation: animacion 90s linear 0s;
+  -moz-animation: animacion 90s linear 0s;
+  -o-animation: animacion 90s linear 0s;
+  -ms-animation: animacion 90s linear 0s;
+  -khtml-animation: animacion 90s linear 0s;
+  z-index: 5;
+}
+
+@keyframes animacion {
+  /* line 150, ../sass/_mixins.scss */
+  from {
+    transform: translate(0, 100px);
+  }
+
+  /* line 151, ../sass/_mixins.scss */
+  to {
+    transform: translate(0, -2500px);
+  }
+}
+
+@-webkit-keyframes animacion {
+  /* line 154, ../sass/_mixins.scss */
+  from {
+    -webkit-transform: translate(0, 100px);
+  }
+
+  /* line 155, ../sass/_mixins.scss */
+  to {
+    -webkit-transform: translate(0, -2500px);
+  }
+}
+
+@-moz-keyframes animacion {
+  /* line 159, ../sass/_mixins.scss */
+  from {
+    -moz-transform: translate(0, 100px);
+  }
+
+  /* line 160, ../sass/_mixins.scss */
+  to {
+    -moz-transform: translate(0, -2500px);
+  }
+}
+
+@-o-keyframes animacion {
+  /* line 164, ../sass/_mixins.scss */
+  from {
+    -o-transform: translate(0, 100px);
+  }
+
+  /* line 165, ../sass/_mixins.scss */
+  to {
+    -o-transform: translate(0, -2500px);
+  }
+}
+
+@-ms-keyframes animacion {
+  /* line 169, ../sass/_mixins.scss */
+  from {
+    -ms-transform: translate(0, 100px);
+  }
+
+  /* line 170, ../sass/_mixins.scss */
+  to {
+    -ms-transform: translate(0, -2500px);
+  }
+}
+
+@-khtml-keyframes animacion {
+  /* line 174, ../sass/_mixins.scss */
+  from {
+    -khtml-transform: translate(0, 100px);
+  }
+
+  /* line 175, ../sass/_mixins.scss */
+  to {
+    -khtml-transform: translate(0, -2500px);
+  }
+}
+
+@keyframes move-twink-back {
+  /* line 97, ../sass/screen.scss */
+  from {
+    background-position: 0 0;
+  }
+
+  /* line 98, ../sass/screen.scss */
+  to {
+    background-position: -10000px 5000px;
+  }
+}
+
+@-webkit-keyframes move-twink-back {
+  /* line 101, ../sass/screen.scss */
+  from {
+    background-position: 0 0;
+  }
+
+  /* line 102, ../sass/screen.scss */
+  to {
+    background-position: -10000px 5000px;
+  }
+}
+
+@-moz-keyframes move-twink-back {
+  /* line 105, ../sass/screen.scss */
+  from {
+    background-position: 0 0;
+  }
+
+  /* line 106, ../sass/screen.scss */
+  to {
+    background-position: -10000px 5000px;
+  }
+}
+
+@-ms-keyframes move-twink-back {
+  /* line 109, ../sass/screen.scss */
+  from {
+    background-position: 0 0;
+  }
+
+  /* line 110, ../sass/screen.scss */
+  to {
+    background-position: -10000px 5000px;
+  }
+}
+
+@keyframes move-clouds-back {
+  /* line 114, ../sass/screen.scss */
+  from {
+    background-position: 0 0;
+  }
+
+  /* line 115, ../sass/screen.scss */
+  to {
+    background-position: 10000px 0;
+  }
+}
+
+@-webkit-keyframes move-clouds-back {
+  /* line 118, ../sass/screen.scss */
+  from {
+    background-position: 0 0;
+  }
+
+  /* line 119, ../sass/screen.scss */
+  to {
+    background-position: 10000px 0;
+  }
+}
+
+@-moz-keyframes move-clouds-back {
+  /* line 122, ../sass/screen.scss */
+  from {
+    background-position: 0 0;
+  }
+
+  /* line 123, ../sass/screen.scss */
+  to {
+    background-position: 10000px 0;
+  }
+}
+
+@-ms-keyframes move-clouds-back {
+  /* line 126, ../sass/screen.scss */
+  from {
+    background-position: 0;
+  }
+
+  /* line 127, ../sass/screen.scss */
+  to {
+    background-position: 10000px 0;
+  }
+}
+
+/* line 130, ../sass/screen.scss */
+.stars, .twinkling, .clouds {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+/* line 141, ../sass/screen.scss */
+.stars {
+  background: black url(../images/stars.png) repeat top center;
+  z-index: 0;
+}
+
+/* line 146, ../sass/screen.scss */
+.twinkling {
+  background: transparent url(../images/twinkling.png) repeat top center;
+  z-index: 1;
+  -moz-animation: move-twink-back 200s linear infinite;
+  -ms-animation: move-twink-back 200s linear infinite;
+  -o-animation: move-twink-back 200s linear infinite;
+  -webkit-animation: move-twink-back 200s linear infinite;
+  animation: move-twink-back 200s linear infinite;
+}
+
+/* line 157, ../sass/screen.scss */
+.clouds {
+  background: transparent url(../images/clouds.png) repeat top center;
+  z-index: 3;
+  -moz-animation: move-clouds-back 200s linear infinite;
+  -ms-animation: move-clouds-back 200s linear infinite;
+  -o-animation: move-clouds-back 200s linear infinite;
+  -webkit-animation: move-clouds-back 200s linear infinite;
+  animation: move-clouds-back 200s linear infinite;
+}
+
+/* line 169, ../sass/screen.scss */
+#pantalla_final {
+  text-align: center;
+  position: absolute;
+  width: 650px;
+  top: 100px;
+  left: 50%;
+  margin-left: -325px;
+  z-index: 333;
+  font-size: 30px;
+  color: #fff;
+  opacity: 0;
+  animation: pantalla_final linear 5s;
+  animation-iteration-count: 1;
+  animation-delay: 91s;
+  animation-fill-mode: forwards;
+  -webkit-animation: pantalla_final linear 5s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-delay: 91s;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation: pantalla_final linear 5s;
+  -moz-animation-iteration-count: 1;
+  -moz-animation-delay: 91s;
+  -moz-animation-fill-mode: forwards;
+  -o-animation: pantalla_final linear 5s;
+  -o-animation-iteration-count: 1;
+  -o-animation-delay: 91s;
+  -o-animation-fill-mode: forwards;
+  -ms-animation: pantalla_final linear 5s;
+  -ms-animation-iteration-count: 1;
+  -ms-animation-delay: 91s;
+  -ms-animation-fill-mode: forwards;
+  -khtml-animation: pantalla_final linear 5s;
+  -khtml-animation-iteration-count: 1;
+  -khtml-animation-delay: 91s;
+  -khtml-animation-fill-mode: forwards;
+  z-index: 9999;
+}
+/* line 183, ../sass/screen.scss */
+#pantalla_final a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  display: block;
+}
+/* line 189, ../sass/screen.scss */
+#pantalla_final p {
+  margin: 10px 0;
+}
+/* line 190, ../sass/screen.scss */
+#pantalla_final p.titulo {
+  font-size: 20px;
+  text-decoration: underline;
+  margin: 15px 0;
+}

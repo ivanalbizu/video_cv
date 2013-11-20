@@ -1,0 +1,207 @@
+
+/*
+ * mixins
+ * 
+ */
+@mixin animacion_inicial ($nombre, $opacidad_inicio, $opacidad_fin, $zoom_inicio, $zoom_interm, $zoom_final){
+  
+  @keyframes $nombre {
+    0% {
+      opacity:$opacidad_inicio;
+      transform: scaleX($zoom_inicio) scaleY($zoom_inicio); }
+    50% {
+      transform: scaleX($zoom_interm) scaleY($zoom_interm); }
+    70% {
+      opacity:$opacidad_inicio;
+      transform: scaleX($zoom_interm) scaleY($zoom_interm); }
+  
+    100% {
+      opacity:$opacidad_fin;
+      transform: scaleX($zoom_final) scaleY($zoom_final); }
+  }
+  
+  @-webkit-keyframes $nombre {
+    0% {
+      opacity:$opacidad_inicio;
+      -webkit-transform: scaleX($zoom_inicio) scaleY($zoom_inicio); }
+    50% {
+      -webkit-transform: scaleX($zoom_interm) scaleY($zoom_interm); }
+    70% {
+      opacity:$opacidad_inicio;
+      -webkit-transform: scaleX($zoom_interm) scaleY($zoom_interm); }
+  
+    100% {
+      opacity:$opacidad_fin;
+      -webkit-transform: scaleX($zoom_final) scaleY($zoom_final); }
+  }
+  
+  @-moz-keyframes $nombre {
+    0% {
+      opacity:$opacidad_inicio;
+      -moz-transform: scaleX($zoom_inicio) scaleY($zoom_inicio); }
+    50% {
+      -moz-transform: scaleX($zoom_interm) scaleY($zoom_interm); }
+    70% {
+      opacity:$opacidad_inicio;
+      -moz-transform: scaleX($zoom_interm) scaleY($zoom_interm); }
+  
+    100% {
+      opacity:$opacidad_fin;
+      -moz-transform: scaleX($zoom_final) scaleY($zoom_final); }
+  }
+  
+  @-ms-keyframes $nombre {
+    0% {
+      opacity:$opacidad_inicio;
+      -ms-transform: scaleX($zoom_inicio) scaleY($zoom_inicio); }
+    50% {
+      -ms-transform: scaleX($zoom_interm) scaleY($zoom_interm); }
+    70% {
+      opacity:$opacidad_inicio;
+      -ms-transform: scaleX($zoom_interm) scaleY($zoom_interm); }
+  
+    100% {
+      opacity:$opacidad_fin;
+      -ms-transform: scaleX($zoom_final) scaleY($zoom_final); }
+  }
+
+  @-o-keyframes $nombre {
+    0% {
+      opacity:$opacidad_inicio;
+      -o-transform: scaleX($zoom_inicio) scaleY($zoom_inicio); }
+    50% {
+      -o-transform: scaleX($zoom_interm) scaleY($zoom_interm); }
+    70% {
+      opacity:$opacidad_inicio;
+      -o-transform: scaleX($zoom_interm) scaleY($zoom_interm); }
+  
+    100% {
+      opacity:$opacidad_fin;
+      -o-transform: scaleX($zoom_final) scaleY($zoom_final); }
+  }
+
+  @-khtml-keyframes $nombre {
+    0% {
+      opacity:$opacidad_inicio;
+      -khtml-transform: scaleX($zoom_inicio) scaleY($zoom_inicio); }
+    50% {
+      -khtml-transform: scaleX($zoom_interm) scaleY($zoom_interm); }
+    70% {
+      opacity:$opacidad_inicio;
+      -khtml-transform: scaleX($zoom_interm) scaleY($zoom_interm); }
+  
+    100% {
+      opacity:$opacidad_fin;
+      -khtml-transform: scaleX($zoom_final) scaleY($zoom_final); }
+  }
+
+}
+
+
+@mixin efecto_aplicado ($nombre, $funcion, $duracion, $iteraciones, $delay, $forwards){
+  animation: $nombre $funcion $duracion;
+  animation-iteration-count: $iteraciones;
+  animation-delay: $delay;
+  animation-fill-mode:$forwards; // fijar estos valores al terminar
+  -webkit-animation: $nombre $funcion $duracion;
+  -webkit-animation-iteration-count: $iteraciones;
+  -webkit-animation-delay: $delay;
+  -webkit-animation-fill-mode:$forwards; // Chrome 16+, Safari 4+
+  -moz-animation: $nombre $funcion $duracion;
+  -moz-animation-iteration-count: $iteraciones;
+  -moz-animation-delay: $delay;
+  -moz-animation-fill-mode:$forwards; // FF 5+
+  -o-animation: $nombre $funcion $duracion;
+  -o-animation-iteration-count: $iteraciones;
+  -o-animation-delay: $delay;
+  -o-animation-fill-mode:$forwards; // Not implemented yet
+  -ms-animation: $nombre $funcion $duracion;
+  -ms-animation-iteration-count: $iteraciones;
+  -ms-animation-delay: $delay;
+  -ms-animation-fill-mode:$forwards; // IE 10+
+  -khtml-animation: $nombre $funcion $duracion;
+  -khtml-animation-iteration-count: $iteraciones;
+  -khtml-animation-delay: $delay;
+  -khtml-animation-fill-mode:$forwards;
+}
+
+@mixin perspectiva ($perspectiva, $rotacion) {
+  transform: perspective($perspectiva) rotateX($rotacion);
+  -webkit-transform: perspective($perspectiva) rotateX($rotacion);
+  -moz-transform: perspective($perspectiva) rotateX($rotacion);
+  -o-transform: perspective($perspectiva) rotateX($rotacion);
+  -ms-transform: perspective($perspectiva) rotateX($rotacion);
+  -khtml-transform: perspective($perspectiva) rotateX($rotacion);
+}
+@mixin animacion ($duracion, $funcion, $delay) {
+  animation:animacion $duracion $funcion $delay;
+  -webkit-animation:animacion $duracion $funcion $delay;
+  -moz-animation:animacion $duracion $funcion $delay;
+  -o-animation:animacion $duracion $funcion $delay;
+  -ms-animation:animacion $duracion $funcion $delay;
+  -khtml-animation:animacion $duracion $funcion $delay;  
+}
+
+@mixin frame_animacion {
+  $top_desde:100px;
+  $top_hasta:-2500px;
+  
+  @keyframes animacion {
+  from   { transform: translate(0,$top_desde); }
+  to     { transform: translate(0,$top_hasta); }
+  }
+  @-webkit-keyframes animacion {
+  from   { -webkit-transform: translate(0,$top_desde); }
+  to     { -webkit-transform: translate(0,$top_hasta); }
+  }
+  
+  @-moz-keyframes animacion {
+  from   { -moz-transform: translate(0,$top_desde); }
+  to     { -moz-transform: translate(0,$top_hasta); }
+  }
+
+  @-o-keyframes animacion {
+  from   { -o-transform: translate(0,$top_desde); }
+  to     { -o-transform: translate(0,$top_hasta); }
+  }
+  
+  @-ms-keyframes animacion {
+  from   { -ms-transform: translate(0,$top_desde); }
+  to     { -ms-transform: translate(0,$top_hasta); }
+  }
+  
+  @-khtml-keyframes animacion {
+  from   { -khtml-transform: translate(0,$top_desde); }
+  to     { -khtml-transform: translate(0,$top_hasta); }
+  }
+}
+
+@mixin efecto_aplicado ($nombre, $funcion, $duracion, $iteraciones, $delay, $forwards){
+  animation: $nombre $funcion $duracion;
+  animation-iteration-count: $iteraciones;
+  animation-delay: $delay;
+  animation-fill-mode:$forwards; // fijar estos valores al terminar
+  -webkit-animation: $nombre $funcion $duracion;
+  -webkit-animation-iteration-count: $iteraciones;
+  -webkit-animation-delay: $delay;
+  -webkit-animation-fill-mode:$forwards; // Chrome 16+, Safari 4+
+  -moz-animation: $nombre $funcion $duracion;
+  -moz-animation-iteration-count: $iteraciones;
+  -moz-animation-delay: $delay;
+  -moz-animation-fill-mode:$forwards; // FF 5+
+  -o-animation: $nombre $funcion $duracion;
+  -o-animation-iteration-count: $iteraciones;
+  -o-animation-delay: $delay;
+  -o-animation-fill-mode:$forwards; // Not implemented yet
+  -ms-animation: $nombre $funcion $duracion;
+  -ms-animation-iteration-count: $iteraciones;
+  -ms-animation-delay: $delay;
+  -ms-animation-fill-mode:$forwards; // IE 10+
+  -khtml-animation: $nombre $funcion $duracion;
+  -khtml-animation-iteration-count: $iteraciones;
+  -khtml-animation-delay: $delay;
+  -khtml-animation-fill-mode:$forwards;
+}
+
+
+
